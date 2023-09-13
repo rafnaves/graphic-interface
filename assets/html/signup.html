@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="../css/signup.css" />
+    <title>Singup</title>
+  </head>
+  <body>
+    <img src="/assets/images/logo.png" alt="Outra Imagem" class="corner-image">
+    <div class="container">
+      <div class="card">
+        <div class="image-title-container">
+          <img src="/assets/images/iconoir_face-id.png" alt="Imagem" class="title-image">
+          <h1>Realizar Cadastro</h1>
+        </div>
+
+        <div id="msgError"></div>
+        <div id="msgSuccess"></div>
+
+        <div class="label-float">
+          <input type="text" id="nome" placeholder=" " required />
+          <label id="labelNome" for="nome">Nome</label>
+        </div>
+
+        <div class="label-float">
+          <input type="text" id="usuario" placeholder=" " required />
+          <label id="labelUsuario" for="usuario">Usuário</label>
+        </div>
+
+        <div class="label-float">
+          <input type="email" id="email" placeholder=" " required />
+          <label id="labelEmail" for="email">Email</label>
+        </div>
+        
+        <div class="label-float data">
+          <input type="date" id="dataNascimento" required />
+          <label id="labelDataNascimento" for="dataNascimento"></label>
+        </div>  
+         
+        <div class="label-float">
+          <input type="text" id="endereco" placeholder=" " required />
+          <label id="labelEndereco" for="endereco">Endereço</label>
+        </div>
+
+        <div class="flex-container">
+          <div class="label-float"> 
+            <input type="number" id="numero" placeholder=" " required />
+            <label id="labelNumero" for="numero">Numero</label>
+          </div>        
+  
+          <div class="label-float"> 
+            <input type="number" id="cep" placeholder=" " required />
+            <label id="labelCep" for="cep">CEP</label>
+          </div> 
+        </div>       
+
+        <div class="label-float">
+          <input type="password" id="senha" placeholder=" " required />
+          <label id="labelSenha" for="senha">Senha</label>
+          <i id="verSenha" class="fa fa-eye" aria-hidden="true"></i>
+        </div>
+
+        <div class="label-float">
+          <input type="password" id="confirmSenha" placeholder=" " required />
+          <label id="labelConfirmSenha" for="confirmSenha"
+            >Confirmar Senha</label
+          >
+          <i id="verConfirmSenha" class="fa fa-eye" aria-hidden="true"></i>
+        </div>
+
+        <div class="justify-center">
+          <button onclick="cadastrar()">Cadastrar</button>
+        </div>
+      </div>
+    </div>
+    <script src="../js/signup.js"></script>
+  </body>
+</html>

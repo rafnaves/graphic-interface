@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed
+  
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 100px;
+}
+
+.card {
+  background-color: #ffffff80;
+  padding: 40px;
+  border-radius: 4%;
+  box-shadow: 0px 0px 91px -2px rgba(0, 0, 0, 0.25);
+  width: 400px;
+}
+
+.corner-image {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 35px; 
+  height: auto;
+  z-index: 2;
+}
+
+.image-title-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.title-image {
+  width: 80px; 
+  height: auto;
+  display: block;
+  margin: 0 auto 10px; 
+}
+
+
+h1{
+  text-align: center;
+  margin-bottom: 20px;
+  color:black;
+}
+
+
+.label-float input{
+  width: 97%;
+  padding: 5px 5px;
+  display: inline-block;
+  border: 0;
+  background-color: transparent;
+  outline: none;
+  min-width: 180px;
+  font-size: 16px;
+  transition: all .3s ease-out;
+  border-radius: 0;
+  color: black;
+}
+
+.label-float{
+  position: relative;
+  padding-top: 13px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  border: 2px solid #E5E7EB;
+  border-radius: 8px;
+}
+
+
+.label-float label{
+  color: grey;
+  pointer-events:none;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  margin-top: 13px;
+  transition: all .3s ease-out;
+}
+
+.label-float input:focus + label,
+.label-float input:valid + label{
+  font-size: 13px;
+  margin-top: 0;
+  color: #afafaf;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+button{
+  background-color: transparent;
+  border-color: #00704A;
+  color: #00704A;
+  padding: 7px;
+  font-weight: bold;
+  font-size: 12pt;
+  margin-top: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  transition: all .4s ease-out;
+}
+
+button:hover{
+  background-color: #00704A;
+  color: #fff;
+}
+
+.justify-center{
+  display: flex;
+  justify-content: center;
+}
+
+.fa-eye{
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  cursor: pointer;
+  color: #00704A;
+}
+
+#msgError{
+  text-align: center;
+  color: #ff0000;
+  background-color: #ffbbbb;
+  padding: 10px;
+  border-radius: 4px;
+  display: none;
+}
+
+#msgSuccess{
+  text-align: center;
+  color: #00bb00;
+  background-color: #bbffbe;
+  padding: 10px;
+  border-radius: 4px;
+  display: none;
+}
+
+
+
